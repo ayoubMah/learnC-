@@ -1,17 +1,21 @@
 #include <iostream>
+#include <limits.h>
 using namespace std ;
 
 
 int main() {
   cout << "=========== WELLCOME TO OUR APP ==============\n" ;
-  cout << "------------------------------------------------\n" ;
-  cout << "Please Enter your age : \n" ;
-  int age ;
-  cin >>  age;
-  int ageWithDays = age * 365 ;
+  short int s = 10;
+  cout << sizeof(s) << "\n";
+  unsigned int a = -12 ;
+  cout << a << "\n" ;
 
-  cout << " your are by days is : "   ;
-  cout << ageWithDays << endl ;
-  cout << "Thank you \n" ;
+  using bigint = long long int ; // using alias with using
+
+  typedef long long int lli ; // using alias with typedef
+
+  lli z = 1234567890987654321 ;
+  cout << z << "\n" ;
+
   return 0;
 }
